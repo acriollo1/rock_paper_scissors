@@ -8,11 +8,11 @@ player = None
 
 
 game(player, computer, choices)
-game(player, computer2, choices)
 
-# play_again = input("Play again? (yes/no): ").lower()
+#wont ask again after once
+play_again = input("Play again? (yes/no): ").lower()
+if play_again != "yes":
+  print("Bye!")
+else:
+  game(player, computer2, choices)
 
-#if play_again != "yes":
-#  break
-
-# print("Bye!")

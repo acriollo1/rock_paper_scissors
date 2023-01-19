@@ -41,10 +41,6 @@ def game(player, computer, choices):
         print("player :", player)
         print("You win!")
         break
-  play_again = input("Play again? (yes/no): ").lower()
-  if play_again != "yes":
-    print("Bye!")
-    break
 
 
 
