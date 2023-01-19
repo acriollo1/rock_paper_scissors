@@ -7,42 +7,47 @@ def game(player, computer, choices):
       print("computer :", computer)
       print("player :", player)
       print("Tie!")
+      break
     elif player == "rock":
       if computer == "paper":
         print("computer :", computer)
         print("player :", player)
         print("You lose!")
+        break
       if computer == "scissors":
         print("computer :", computer)
         print("player :", player)
         print("You win!")
+        break
     elif player == "paper":
       if computer == "rock":
         print("computer :", computer)
         print("player :", player)
         print("You win!")
+        break
       if computer == "scissors":
         print("computer :", computer)
         print("player :", player)
         print("You lose!")
+        break
     elif player == "scissors":
       if computer == "rock":
         print("computer :", computer)
         print("player :", player)
         print("You lose!")
+        break
       if computer == "paper":
         print("computer :", computer)
         print("player :", player)
         print("You win!")
+        break
+  play_again = input("Play again? (yes/no): ").lower()
+  if play_again != "yes":
+    print("Bye!")
+    break
 
-    play_again = input("Play again? (yes/no): ").lower()
-    redo(play_again)
 
 
-def redo(play_again):
-  if play_again == "yes":
-  return 
-    
 
 
 
